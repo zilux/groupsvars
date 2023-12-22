@@ -1,2 +1,6 @@
 ---
 # tasks file for roles/debugging
+
+- name: A debug message
+  ansible.builtin.debug:
+    msg: The message is {{ motd }}
