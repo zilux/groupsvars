@@ -3,4 +3,7 @@
 
 - name: A debug message
   ansible.builtin.debug:
-    msg: The message is {{ debugging_motd }}
+    msg: 
+      - The message is {{ debugging_motd }}
+      - -- {{ server }}
+      - -- {{ capsule }}
